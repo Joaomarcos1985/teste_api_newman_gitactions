@@ -1,9 +1,9 @@
 name: teste_api_newman
-push:  #Execução por atualização do github na branch master
+push:  # Execução por atualização do github na branch master
     branches:
      - 'master'
       
-  workflow_dispatch:  # Execução manual
+  
   
   
   jobs:
