@@ -5,7 +5,7 @@ on:
   
   push:  #Execução por atualização do github na branch main
     branches:
-     - 'main'
+     - 'master'
       
   workflow_dispatch:  #Execução manual
       
