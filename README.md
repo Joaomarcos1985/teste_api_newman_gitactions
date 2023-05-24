@@ -1,4 +1,4 @@
-# teste_api_newman_github_actions
+# Teste_api_newman_github_actions
 
 Meu projeto é baseado nas ferramentas: Postman, Newman, GitHub Actions e testes automatizados com agendamento cron. 
 Utilizo o Postman para criar e testar solicitações HTTP, 
