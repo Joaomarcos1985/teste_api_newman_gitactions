@@ -1,0 +1,139 @@
+{
+	"info": {
+		"_postman_id": "6cd7cd20-db1e-4bc2-8de8-5846d417a2dc",
+		"name": "Testes_de_Hoje",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "27098733",
+		"_collection_link": "https://www.postman.com/cloudy-satellite-145562/workspace/aula-api-week3/collection/27098733-6cd7cd20-db1e-4bc2-8de8-5846d417a2dc?action=share&creator=27098733&source=collection_link"
+	},
+	"item": [
+		{
+			"name": "Teste_1_categorie_id",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{int}}/categories/",
+					"host": [
+						"{{int}}"
+					],
+					"path": [
+						"categories",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Teste_2_categorie_id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{int}}/categories/fresh",
+					"host": [
+						"{{int}}"
+					],
+					"path": [
+						"categories",
+						"fresh"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Consulta_costumer2",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "{{int}}/customers/2",
+					"host": [
+						"{{int}}"
+					],
+					"path": [
+						"customers",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Atualizacao_costumer2",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"firstname\": \"joao\",\n  \"lastname\": \"marcos2\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{int}}/customers/2",
+					"host": [
+						"{{int}}"
+					],
+					"path": [
+						"customers",
+						"2"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
