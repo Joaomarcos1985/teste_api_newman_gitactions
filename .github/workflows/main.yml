@@ -11,7 +11,7 @@ on:
       
       
 jobs:
-  test-api:
+   name: Test Linux
     runs-on: ubuntu-latest
     steps:
       # Faz check-out do seu repositório em $GITHUB_WORKSPACE, para que seu trabalho possa acessá-lo
