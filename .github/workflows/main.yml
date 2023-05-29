@@ -17,13 +17,10 @@ jobs:
       # Faz check-out do seu repositório em $GITHUB_WORKSPACE, para que seu trabalho possa acessá-lo
 
       - uses: actions/checkout@v2
-      - name: Set up Docker
-          uses: docker/setup-docker@v1
+  
+         
 
-    - name: Build and Run Docker Container
-      run: |
-        docker build -t my-container .
-        docker run my-container
+    
 
       # Instalar o node
       - name: Install Node
