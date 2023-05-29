@@ -18,7 +18,13 @@ jobs:
 
       - uses: actions/checkout@v2
   
-         
+  test:
+    name: Test no Mac
+  
+    runs-on: macos-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2   
 
     
 
