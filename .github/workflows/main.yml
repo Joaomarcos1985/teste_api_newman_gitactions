@@ -11,14 +11,15 @@ on:
       
       
 jobs:
-   name: Test Linux
+ teste-1:
+    
     runs-on: ubuntu-latest
     steps:
       # Faz check-out do seu repositório em $GITHUB_WORKSPACE, para que seu trabalho possa acessá-lo
 
       - uses: actions/checkout@v2
   
-  test:
+ test:
     name: Test no Mac
   
     runs-on: macos-latest
