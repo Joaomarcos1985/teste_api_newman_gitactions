@@ -19,7 +19,7 @@ jobs:
 
       - uses: actions/checkout@v4
   
- test:
+ teste-2:
     name: teste-2
   
     runs-on: macos-latest
@@ -51,13 +51,10 @@ jobs:
 
       # Execute a coleção POSTMAN
 
-      - name: Run POSTMAN collection on real time
-        run: |
-          newman run testes_hoje.json -e workspace.postman_globals.json
-      
+  
       - name: Run POSTMAN collection
         run: |
-          newman run testes_hoje.json -e workspace.postman_globals.json -r htmlextra --reporter-htmlextra-export testResults/htmlreport.html --reporter-htmlextra-darkTheme  > testResults/runreport1.html
+          newman run Serverrest.postman_collection.json -e ServeRest.postman_environment.json -r cli,htmlextra
       # Upload the contents of Test Results directory to workspace
       - name: Output the run Details
         uses: actions/upload-artifact@v4
