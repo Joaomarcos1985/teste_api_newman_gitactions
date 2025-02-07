@@ -32,8 +32,7 @@ jobs:
       # Instalar o node
       - name: Install Node
         uses: actions/setup-node@v4
-        with:
-          node-version: "12.x"
+       
 
 
       # Instale o utilitário de linha de comando newman e também instale o html extra reporter
